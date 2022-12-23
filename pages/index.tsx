@@ -1,18 +1,18 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Home() {
   return (
     <ul>
       <li>
-        <Link href="/a" as="/a">
+        <Link href="/item/[number]" as="/item/1">
           a
         </Link>
       </li>
       <li>
-        <Link href="/b" as="/b">
+        <Link href="/item/[number]" as="/item/2">
           b
         </Link>
       </li>
     </ul>
-  )
+  );
 }
